@@ -1,0 +1,135 @@
+.encabezado-descripcion,
+.encabezado-titulo {
+    color: #fff;
+    padding: 10px 0
+}
+
+.caja-encabezado,
+.caja-main,
+.encabezado,
+.respuesta {
+    text-align: center
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, .577);
+    background-image: url("../../images/calculadora.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.encabezado {
+    background-color: #400057;
+    padding: 5px 0
+}
+
+.encabezado-titulo {
+    text-transform: uppercase
+}
+
+.respuesta {
+    padding: 10px 0
+}
+
+.respuesta p {
+    font-size: 25px;
+    font-weight: 700
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    max-width: 1000px
+}
+
+.caja {
+    width: 30%;
+    height: 600px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    margin: 15px;
+    float: left
+}
+
+.caja-encabezado {
+    background-color: #3a017b;
+    padding: 15px 0;
+    color: #fff
+}
+
+.caja-main {
+    padding: 10px
+}
+
+.caja-main__text {
+    font-size: 20px;
+    font-weight: 700
+}
+
+.caja-main__input {
+    height: 40px;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: #3a017b;
+    border: solid #000;
+    border-radius: 30px;
+    background-color: rgba(80, 1, 100, .435)
+}
+
+.caja-main__button {
+    background-color: #3a017b;
+    color: #fff;
+    width: 120px;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    border-style: none;
+    border-radius: 10px
+}
+
+.caja-main__button:hover {
+    background-color: #1b2550;
+    cursor: pointer
+}
+
+.caja-main__button:active {
+    background-color: #4c5580
+}
+
+::placeholder {
+    color: #000000bb
+}
+
+@media screen and (max-width:800px) {
+    .caja {
+        margin: 10px
+    }
+}
+
+@media screen and (max-width:1022px) {
+    .contenedor {
+        width: 100%
+    }
+
+    .caja {
+        width: 90%;
+        margin: 25px;
+        height: auto
+    }
+}

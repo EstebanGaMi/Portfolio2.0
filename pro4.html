@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang=es>
+<head>
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href="assets/css/calculadora.css">
+<link rel="shortcut icon" href="images/gm.mp4">
+<title>Figuras Geometricas</title>
+</head>
+<body>
+<header class=encabezado>
+<h1 class=encabezado-titulo>Figuras Geometricas</h1>
+<p class=encabezado-descripcion>
+Calcular diferentes medidas de figuras Geometricas como area y perimetro.
+</p>
+</header>
+<div class=respuesta>
+<p id=resultado></p>
+</div>
+<section class=contenedor>
+<div class=caja>
+<div class=caja-encabezado>
+<h2>Cuadrado</h2>
+</div>
+<div class=caja-main>
+<p class=caja-main__text>¿Cuanto mide cada lado de tu cuadrado?</p>
+<input class=caja-main__input type=number name=inputSide id=inputSide placeholder="Ingrese los lados">
+<button class=caja-main__button type=button onclick=calculatePerimSquad()>Perimetro</button>
+<button class=caja-main__button type=button onclick=calculateareaSquad()>Area</button>
+</div>
+</div>
+<div class=caja>
+<div class=caja-encabezado>
+<h2>Triangulo</h2>
+</div>
+<div class=caja-main>
+<p class=caja-main__text>¿Cuanto mide cada lado de tu Triangulo?</p>
+<input class=caja-main__input type=number name=side1 id=side1 placeholder="Ingrese lado 01">
+<input class=caja-main__input type=number name=side2 id=side2 placeholder="Ingrese lado 02">
+<input class=caja-main__input type=number name=side3 id=side3 placeholder="Ingrese lado 03">
+<button class=caja-main__button type=button onclick=calculatePerimTriangle()>Perimetro</button>
+<p class=caja-main__text>¿Cuanto mide base y altura de tu Triangulo?</p>
+<input class=caja-main__input type=number name=base id=base placeholder="Ingrese Base">
+<input class=caja-main__input type=number name=altura id=altura placeholder="Ingrese Altura">
+<button class=caja-main__button type=button onclick=calculateareaTriangle()>Area</button>
+</div>
+</div>
+<div class=caja>
+<div class=caja-encabezado>
+<h2>Circulo</h2>
+</div>
+<div class=caja-main>
+<p class=caja-main__text>¿Cuanto mide el radio de tu circulo?</p>
+<input class=caja-main__input type=number name=radio id=radio placeholder="Ingrese Radio">
+<button class=caja-main__button type=button onclick=calculateDiamCircle()>Diametro</button>
+<button class=caja-main__button type=button onclick=calculatePerimCircle()>Perimetro</button>
+<button class=caja-main__button type=button onclick=calculateareaCircle()>Area</button>
+</div>
+</div>
+</section>
+<script src="assets/js/calculadora.js"></script>
+</body>
+</html>

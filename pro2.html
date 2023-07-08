@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<title>Segundo Proyecto</title>
+<link rel=stylesheet href="assets/css/pro2.css">
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel=stylesheet>
+<link rel=preconnect href=https://fonts.googleapis.com>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel=stylesheet>
+<link rel="shortcut icon" href="images/gm.mp4">
+</head>
+<body>
+<header>
+<h1 id=title>Solo Leveling Beta Form</h1>
+<p id=description>
+Thank you for being part of the Beta.
+</p>
+</header>
+<main>
+<section>
+<form id=survey-form>
+<div class=form-group>
+<label id=name-label for=name>Name</label>
+<input name=name id=name class=form-control placeholder="Enter your name" required>
+</div>
+<div class=form-group>
+<label id=email-label for=email>Email</label>
+<input type=email name=email id=email class=form-control placeholder="Enter your Email" required>
+</div>
+<div class=form-group>
+<label id=number-label for=number>Age<span class=clue>(optional)</span></label>
+<input type=number name=age id=number min=10 max=99 class=form-control placeholder=Age>
+</div>
+<div class=form-group>
+<p>What is your favorite role?</p>
+<select id=dropdown name=role class=form-control required>
+<option disabled selected value="">Select your role</option>
+<option value=Carry>Carry AD</option>
+<option value=Support>Support</option>
+<option value="Tank ">Tank </option>
+<option value=Brawler>Brawler</option>
+<option value=other>Other</option>
+</select>
+</div>
+<div class=form-group>
+<p>Would you recommend Solo leveling to a friend?</p>
+<div class=input>
+<label>
+<input name=user-recommend value=definitely type=radio class=input-radio checked>Definitely</label>
+<label>
+<input name=user-recommend value=maybe type=radio class=input-radio>Maybe</label>
+<label><input name=user-recommend value=not-sure type=radio class=input-radio>Not sure</label>
+</div>
+</div>
+<div class=form-group>
+<p>
+What is your favorite solo leveling character?
+</p>
+<select id=most-like name=mostLike class=form-control required>
+<option disabled selected value="">Select an option</option>
+<option value="Sung Jinwoo">Sung Jinwoo</option>
+<option value="Yoo Jinho">Yoo Jinho</option>
+<option value="Cha Hae-In">Cha Hae-In</option>
+<option value="Thomas Andre">Thomas Andre</option>
+</select>
+</div>
+<div class=form-group>
+<p>
+What would you like to see improved?
+<span class=clue>(Check all that apply)</span>
+</p>
+<label class=input-checkbox><input name=prefer value="
+gameplay" type=checkbox class=check>
+gameplay</label>
+<label class=input-checkbox>
+<input name=prefer value="
+designs" type=checkbox class=check>
+designs</label>
+<label class=input-checkbox><input name=prefer value=characters type=checkbox class=check>characters</label>
+<label class=input-checkbox><input name=prefer value="
+history" type=checkbox class=check>
+history</label>
+<label class=input-checkbox><input name=prefer value="
+art" type=checkbox class=check>
+art</label>
+<label class=input-checkbox><input name=prefer value=skills type=checkbox class=check>skills</label>
+<label class=input-checkbox><input name=prefer value=voices type=checkbox class=check>voices</label>
+</div>
+<div class=form-group>
+<p>Any comments or suggestions?</p>
+<textarea id=comments class=input-textarea name=comment placeholder="Enter your comment here..."></textarea>
+</div>
+<div class=form-group>
+<div class=btn1>
+<button type=submit id=submit class=btn>
+Submit
+</button>
+</div>
+</div>
+</form>
+</section>
+</main>
+<footer>
+</footer>
+</body>
+</html>
