@@ -3734,7 +3734,7 @@ body.is-preload .wrapper.fade>.inner {
 	overflow-y: auto;
 	position: fixed;
 	text-align: right;
-	top: 0;
+	/* top: 0; */
 	width: 18em;
 	/* z-index: 10000; */
 }

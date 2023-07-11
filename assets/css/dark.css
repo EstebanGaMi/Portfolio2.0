@@ -1,6 +1,7 @@
 .dark-mode-boton {
-    width: 3rem;
-    margin-bottom: 15rem;
+    /* width: 3rem; */
+    margin-top: 4rem;
+    margin-bottom: 7rem;
     margin-left: 11.5rem;
     filter: invert(100%);
 
